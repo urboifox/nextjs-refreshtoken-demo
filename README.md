@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js refresh token demo
 
-## Getting Started
+in react you can handle the refresh token with axios interceptors, but many next.js developers prefer not using axios and sticking with the default fetch api
+the problem is that you can intercept all requests and responses in order to refresh the token or retry the last request after refreshing.
 
-First, run the development server:
+this is what this repo demonestrated.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+all files in this repo has comments explaining the flow of this demo
+there are 4 main files
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1- next.config.mjs
+2- login.tsx
+3- profile.tsx
+4- middleware.ts
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+by reading through these 4 files, you will understand how you could handle cookies, refresh token, and retrying the latest request from the middleware.ts file
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+if you found this repo helpful don't forget to star it!
