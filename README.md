@@ -10,10 +10,10 @@ this is what this repo demonestrated.
 all files in this repo has comments explaining the flow of this demo
 there are 4 main files
 
-1- next.config.mjs
-2- login.tsx
-3- profile.tsx
-4- middleware.ts
+1. next.config.mjs
+2. login.tsx
+3. profile.tsx
+4. middleware.ts
 
 by reading through these 4 files, you will understand how you could handle cookies, refresh token, and retrying the latest request from the middleware.ts file
 
