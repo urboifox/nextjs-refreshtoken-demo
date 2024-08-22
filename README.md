@@ -3,8 +3,11 @@
 in react you can handle the refresh token with axios interceptors, but many next.js developers prefer not using axios and sticking with the default fetch api.
 
 the problem is that you can't intercept all requests and responses in next.js in order to refresh the token or retry the last request after refreshing it.
+because any 3rd party api request wont reach the middleware in your next.js app.
 
 this is what this repo solves.
+
+we will proxy our requests so that all requests will reach the middleware file, and see how we can handle cookies, and retrying the last request.
 
 ## structure
 
