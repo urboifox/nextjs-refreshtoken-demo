@@ -9,6 +9,12 @@ this is what this repo solves.
 
 we will proxy our requests so that all requests will reach the middleware file, and see how we can handle cookies, and retrying the last request.
 
+## Methods
+
+1. axios: one of the methods that solve the problem instantly, is just using axios, with axios interceptors you can handle refrsh token the exact way you do in react. but you lose some features of nextjs's fetch api, which handles caching and more stuff automatically for you.
+2. using a fetch wrapper: you can create a wrapper function around the fetch function, and do all your magic there, but i didn't try this method and don't have much information about it
+3. this method: after searching for more than a month to solve this issue in a nice way, and coming up with this repo, i didn't see anyone doing it this way, and for more information about this method, read below.
+
 ## structure
 
 all files in this repo has comments explaining the flow of this demo
