@@ -13,7 +13,7 @@ const nextConfig = {
                 // these 2 lines add a proxy automatically to all requests coming to your server (if theres no api route for them)
                 // for example: if you have a route at /api/profile it will requests this endpoint
                 // but if you don't, then it will redirect it to http://localhosr:3001/profile
-                // AND THE GREAT THIS IS, they reach the middleware.ts file which is all we want.
+                // AND THE GREAT THING IS, they reach the middleware.ts file which is all we want.
                 source: "/api/:path*",
                 destination: `${API_ENDPOINT}/:path*`,
             },
