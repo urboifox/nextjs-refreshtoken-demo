@@ -15,7 +15,7 @@ export default async function middleware(req: NextRequest) {
         originalRequest.headers.set("Authorization", "Bearer " + accessToken);
     }
 
-    // instead if returning the NextResponse.next() directly
+    // instead of returning the NextResponse.next() directly
     // 1- we recieve the requet from any page here in the middleware
     // 2- we make the request ourselves from the middleware to handle it
     // 3- then we return the response from the request we made instead of NextResponse.Next()
