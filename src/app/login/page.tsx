@@ -19,6 +19,7 @@ export default function LoginPage() {
         const payload = { username: data.username, password: data.password };
         const res = await fetch(API_ENDPOINT + "/login", {
             method: "POST",
+            // IMPORTANT you must include the credentials "include" to make the browser accept the cookies from the server
             credentials: "include",
             body: JSON.stringify(payload),
             headers: {
