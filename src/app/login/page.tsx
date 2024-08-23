@@ -31,7 +31,7 @@ export default function LoginPage() {
             // do what ever you want with the user data, maybe set it in a store
             // but we WON'T set the access token ourselves
             //
-            // but why? because in a normal react way, i wanna access the refresh token on the client to send it with the request.
+            // but why? because in a normal react way, i wanna access the access token on the client to send it with the request.
             // but in this method we are sending the access token with requets from the middleware, which is on the server
             // so we don't need to access it or set it on the client (more details in middleware.ts)
 
