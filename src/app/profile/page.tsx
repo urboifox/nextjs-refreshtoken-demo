@@ -5,6 +5,9 @@ import Link from "next/link";
 export default async function ProfilePage() {
     // even though this request is for an internal route, but theres no /api/profile in our app
     // so the request will be redirected to API_ENDPOINT/profile (more info at next.config.mjs)
+    // - if you get a type error: URL is invalid
+    // you can add "http://localhost:3000" at the start of the url, or add it to a variable
+    // ex: export const LOCAL_URL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://production.com";
     const res = await fetch("/api/profile", {
         headers: {
             // you should send the cookies manually with the requests that are sent from server side, so that the cookies reaches the middleware.ts.
