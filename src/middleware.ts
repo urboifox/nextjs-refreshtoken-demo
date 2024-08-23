@@ -21,7 +21,7 @@ export default async function middleware(req: NextRequest) {
     // 3- then we return the response from the request we made instead of NextResponse.Next()
     let res = await fetch(originalRequest);
 
-    // here we handle the refresh token logic
+    // here we handle the refresh token logic, because the request failed with 401 (Unauthorized)
     if (res.status === 401) {
         // fetch the refresh token endpoint
         const refreshResponse = await fetch(API_ENDPOINT + "/refresh", {
