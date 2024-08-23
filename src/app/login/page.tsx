@@ -32,7 +32,7 @@ export default function LoginPage() {
             // but we WON'T set the access token ourselves
             //
             // but why? because in a normal react way, you normally want the accessToken on the client to send it with the request.
-            // but in this method we are sending the access token with requets from the middleware, which is on the server
+            // but in this method we are attaching the accessToken on the request from the middleware, which is on the server
             // so we don't need to access it or set it on the client (more details in middleware.ts)
 
             if (json.success) {
