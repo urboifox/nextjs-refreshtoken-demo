@@ -7,8 +7,9 @@ export default async function ProfilePage() {
     // so the request will be redirected to API_ENDPOINT/profile (more info at next.config.mjs)
     const res = await fetch("/api/profile", {
         headers: {
-            // you should send the cookies with the requests from server side, so that it reaches the middleware.ts.
+            // you should send the cookies manually with the requests that are sent from server side, so that the cookies reaches the middleware.ts.
             // put in mind that this makes this route dynamic, meaning that next will pre-render it on each request.
+            // because we are using a function from next/headers
             Cookie: cookies().toString(),
         },
     });
