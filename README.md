@@ -14,11 +14,10 @@ we will proxy our requests so that all requests will reach the middleware file, 
 I've only tested this on a small project and it might need some adjustments and further enhancements.
 so make sure to not blindly copy/paste and just understand the idea of the code, and apply it yourself.
 
-## Methods
+## Other Methods
 
 1. axios: one of the methods that solve the problem instantly, is just using axios, with axios interceptors you can handle refrsh token the exact way you do in react. but you lose some features of nextjs's fetch api, which handles caching and more stuff automatically for you.
 2. using a fetch wrapper: you can create a wrapper function around the fetch function, and do all your magic there, but i didn't try this method and don't have much information about it
-3. this method: after searching for more than a month to solve this issue in a nice way, and coming up with this repo, i didn't see anyone doing it this way, and for more information about this method, read below.
 
 ## structure
 
