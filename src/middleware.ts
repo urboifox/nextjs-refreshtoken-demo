@@ -50,7 +50,7 @@ export default async function middleware(req: NextRequest) {
             return res;
         } else {
             // if refreshing fails, that means the user doesn't have a refresh token, or it's not valid, then we log him out
-            // or maybe you have a /logout route or page
+            // or maybe you have a /logout route or page you wanna redirect the user to, do whatever you want here to log the user out.
             const res = NextResponse.redirect("/login");
             res.cookies.delete("accessToken");
             return res;
