@@ -14,6 +14,7 @@ export default function LoginPage() {
     };
 
     // IMPORTANT you should make the login request, or whatever request that makes the server set a cookie in the browser from the client side
+    // or make it on the server ex: (server actions), but you would need to parse the cookie from the response and set it yourself
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         const payload = { username: data.username, password: data.password };
