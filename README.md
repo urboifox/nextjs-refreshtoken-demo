@@ -13,6 +13,7 @@ we will proxy our requests so that all requests will reach the middleware file, 
 
 I've only tested this on a small project and it might need some adjustments and further enhancements.
 so make sure to not blindly copy/paste and just understand the idea of the code, and apply it yourself.
+this is just a POC
 
 ## Other Methods
 
